@@ -5,19 +5,19 @@ import NavBar from "./components/NavBar";
 import Configuration from "./components/Configuration";
 import Templates from "./components/Templates";
 
-import { Route, Switch, Redirect } from "react-router";
+import { Route, Switch } from "react-router";
 
 let routes = (
   <Switch>
-    <Route path="/layout-config">
+    <Route path="/">
       <Configuration />
     </Route>
     <Route exact path="/change-layout">
       <Templates />
     </Route>
-    <Route exact path="/">
+    {/* <Route exact path="/">
       <Redirect to="/layout-config" />
-    </Route>
+    </Route> */}
   </Switch>
 );
 
