@@ -1,0 +1,23 @@
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer-header-title {
+  flex: 1;
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+
+.layout-content {
+  padding: 1rem;
+}
+
+.react-grid-layout {
+  position: relative;
+}
+
+.react-grid-item {
+  background: #ddd;
+}

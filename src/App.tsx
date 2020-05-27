@@ -1,19 +1,22 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 
 import NavBar from "./components/NavBar";
 import Configuration from "./components/Configuration";
 import Templates from "./components/Templates";
 
-import { Route, Switch } from "react-router";
+import { Route, Switch, Redirect } from "react-router";
 
 let routes = (
   <Switch>
-    <Route exact path="/">
+    <Route path="/layout-config">
+      <Configuration />
+    </Route>
+    <Route exact path="/change-layout">
       <Templates />
     </Route>
-    <Route path="/:layout">
-      <Configuration />
+    <Route exact path="/">
+      <Redirect to="/layout-config" />
     </Route>
   </Switch>
 );
